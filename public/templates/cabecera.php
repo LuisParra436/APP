@@ -13,7 +13,7 @@
     <body>
 
     <header>
-    <img src="src/logo.png" class="logo">   <br>  <h1>AREPAS EL DORADO</h1>
+    <img src="img/logo.png" class="logo">   <br>  <h1>AREPAS EL DORADO</h1>
     </header>
     <br><br><br>
 

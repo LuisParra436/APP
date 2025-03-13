@@ -101,11 +101,11 @@
                 </div>    
                 <div class="col-md-4">
                 <br> <br> <br><br><br><br>
-                    <form action="validar.php" method="post">   <!--//secciones/index.php-->
+                    <form action="/config/validar.php" method="post">   <!--//secciones/index.php-->
                  <div class="card">
                     <div class= "cabesado">
                     <br>
-                    <img src="../src/logo.png" class="img-thumbnail"
+                    <img src="img/logo.png" class="img-thumbnail"
                                 width="130"
                                 height="130" 
                                 posision="center"/>
@@ -161,7 +161,7 @@
                  
                 </div>       
         </div><br><br>
-        <button class="btn-regresar" onclick="location.href='../index.php'">Regresar</button>
+        <button class="btn-regresar" onclick="location.href='index.php'">Regresar</button>
 
 
         <!-- Bootstrap JavaScript Libraries -->

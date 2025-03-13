@@ -370,7 +370,7 @@ transform: scale(1.1); /* Efecto de zoom */
 .marquee {
     display: flex;
     gap: 20px;
-    animation: mover 20s linear infinite;
+    animation: mover 30s linear infinite;
 }
 
 .marquee img {

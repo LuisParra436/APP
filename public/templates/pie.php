@@ -6,12 +6,12 @@
     <div class="marquee-container">
         
     <div class="marquee">
-        <img src="src/zapatoca.png" alt="Logo 1">
-        <img src="src/frutiver.png" alt="Logo 2">
-        <img src="src/camacho.png" alt="Logo 3">
-        <img src="src/zapatoca.png" alt="Logo 1">
-        <img src="src/frutiver.png" alt="Logo 2">
-        <img src="src/camacho.png" alt="Logo 3">
+        <img src="img/zapatoca.png" alt="Logo 1">
+        <img src="img/frutiver.png" alt="Logo 2">
+        <img src="img/camacho.png" alt="Logo 3">
+        <img src="img/zapatoca.png" alt="Logo 1">
+        <img src="img/frutiver.png" alt="Logo 2">
+        <img src="img/camacho.png" alt="Logo 3">
     
     </div>
 </div>

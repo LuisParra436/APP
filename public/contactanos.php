@@ -14,9 +14,9 @@
         <div class="info-empresa">
             <h2>Información de la Empresa</h2>
             <p><strong>Nombre:</strong> Arepas El Dorado</p>
-            <p><strong>Teléfono:</strong> +57 123 456 7890</p>
-            <p><strong>Email:</strong> contacto@eldorado.com</p>
-            <p><strong>Dirección:</strong> Calle 123, Bogotá, Colombia</p>
+            <p><strong>Teléfono:</strong> +57 3046074611</p>
+            <p><strong>Email:</strong> arepa.eldorado001@hotmail.com</p>
+            <p><strong>Dirección:</strong> Calle 76a # 78 c 42 sur</p>
         </div>
 
         <div class="ubicacion">
@@ -31,13 +31,13 @@
             <h2>Redes Sociales</h2>
                     <div class="social-links">
                     <a href="https://wa.me/573046074611" target="_blank">
-                    <img src="src/redes/whatsapp.png" alt="WhatsApp">
+                    <img src="img/redes/whatsapp.png" alt="WhatsApp">
                 </a>
                 <a href="https://www.facebook.com/people/Arepas-el-Dorado/100068605943488/" target="_blank">
-                    <img src="src/redes/facebook.png" alt="Facebook">
+                    <img src="img/redes/facebook.png" alt="Facebook">
                 </a>
                 <a href="https://www.instagram.com/arepaseldorado/#" target="_blank">
-                    <img src="src/redes/instagram.png" alt="Instagram">
+                    <img src="img/redes/instagram.png" alt="Instagram">
                 </a>
             </div>
         </div>

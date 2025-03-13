@@ -14,11 +14,11 @@
 
     <nav>
 
-                <a href="index.php">Home  </a>
+                <a href="dashboard.php">Home  </a>
                 <a href="operaciones.php">opéraciones</a>
                 <a href="vista_productos.php">  productos </a>
                 <a href="usuarios.php">   usuarios </a>
-                <a href="../logaut/index.php">salir  </a>
+                <a href="./public/index.php">salir  </a>
                 <div class="animation start-home"></div>
     </nav>
     <?php include('../templates/cabecera.php') ?>

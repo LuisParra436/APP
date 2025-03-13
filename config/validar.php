@@ -1,10 +1,7 @@
 <?php
+include("conexion.php");
 session_start();
-$conexion = new mysqli("localhost","root", "", "dorado");
 
-if ($conexion->connect_error) {
-    die("Error de conexión: " . $conexion->connect_error);
-}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["usuario"];
@@ -22,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $hashed_password)) {
             $_SESSION["usersname"] = $username;
             $_SESSION["id"] = $id;
-            header("Location:../secciones/index.php");
+            header("Location:/app/dashboard.php");
             exit();
         } else {
             header( "location:./");
