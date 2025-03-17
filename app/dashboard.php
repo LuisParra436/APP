@@ -8,23 +8,37 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../public/css/style.css">
       
     </head>
+<body>
+<header>
+    <img src="../public/img/logo.png" class="logo">   <br>  <h1>AREPAS EL DORADO</h1>
+    </header>
+    <br><br><br>
 
     <nav>
+    <nav class="navbar">
+       
+       <div class="menu-icon" onclick="toggleMenu()"></div>
+       <ul class="nav-links">
 
-                <a href="dashboard.php">Home  </a>
-                <a href="operaciones.php">opéraciones</a>
-                <a href="vista_productos.php">  productos </a>
-                <a href="usuarios.php">   usuarios </a>
-                <a href="./public/index.php">salir  </a>
-                <div class="animation start-home"></div>
+                <li><a href="dashboard.php">Home  </a></li>
+                <li><a href="operaciones.php">opéraciones</a></li>
+                <li><a href="vista_productos.php">  productos </a></li>
+                <li><a href="views/usuarios/listar.php">   usuarios </a></li>
+                <li><a href="../public/index.php">salir  </a>
+       </ul>
+   </nav>
+   <script>
+       function toggleMenu() {
+           document.querySelector(".nav-links").classList.toggle("active");
+       }
+   </script>
     </nav>
-    <?php include('../templates/cabecera.php') ?>
    
             
-            
+    </body> <br><br><br>         
     
-    <?php include('../templates/pie.php');?>
+    
 </html>

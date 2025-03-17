@@ -19,10 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $hashed_password)) {
             $_SESSION["usersname"] = $username;
             $_SESSION["id"] = $id;
-            header("Location:/app/dashboard.php");
+            header("Location:../app/dashboard.php");
             exit();
         } else {
-            header( "location:./");
+            header( "location:./login.php");
             exit();
         }
     } else {

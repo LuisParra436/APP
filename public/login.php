@@ -101,7 +101,7 @@
                 </div>    
                 <div class="col-md-4">
                 <br> <br> <br><br><br><br>
-                    <form action="/config/validar.php" method="post">   <!--//secciones/index.php-->
+                    <form action="../config/validar.php" method="post">   <!--//secciones/index.php-->
                  <div class="card">
                     <div class= "cabesado">
                     <br>
