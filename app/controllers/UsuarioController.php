@@ -6,7 +6,7 @@ class UsuarioController {
     public function listar() {
         $usuario = new Usuario();
         $usuarios = $usuario->getAll();
-        require '../views/usuarios/listar.php';
+        require '/../views/usuarios/listar.php';
     }
 
     public function crear($datos) {

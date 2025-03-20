@@ -1,5 +1,5 @@
 <?php
-include("../config/conexion.php");
+include("../../config/conexion.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullname = $_POST["fullname"];
@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssss", $fullname, $username, $password, $cargo);
 
     if ($stmt->execute()) {
-        echo "<script>alert('Usuario registrado exitosamente'); window.location='index.php';</script>";
+        echo "<script>alert('Usuario registrado exitosamente');window.close();</script>";
     } else {
         echo "Error: " . $stmt->error;
     }
@@ -32,3 +32,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <button type="submit">Registrar</button>
 </form>
+<button class="btn2" src="../../listar.php">cerrar</button>
