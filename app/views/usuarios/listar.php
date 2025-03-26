@@ -15,8 +15,29 @@ $resultado = $conexion->query("SELECT * FROM users");
     <title>usuarios</title>
 </head>
 <center><body>
+<header>
+    <img src="../../../public/img/logo.png" class="logo">   <br>  <h1>AREPAS EL DORADO</h1>
+</header>
+<br><br><br>
 
-<?php include('../../dashboard.php');?> <br><br><br>
+    <nav>
+    <nav class="navbar">
+       
+       <div class="menu-icon" onclick="toggleMenu()"></div>
+       <ul class="nav-links">
+
+                <li><a href="../../dashboard.php">Atras </a></li>
+               
+       </ul>
+   </nav>
+   <script>
+       function toggleMenu() {
+           document.querySelector(".nav-links").classList.toggle("active");
+       }
+   </script>
+    </nav>
+
+
 
 <div class="contenedor">
 <button class="btn2" onclick="abrirModalNuevo()">Crear Usuario</button><br><br>

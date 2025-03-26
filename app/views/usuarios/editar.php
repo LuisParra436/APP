@@ -21,6 +21,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../public/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
 <form method="POST">
     <input type="text" name="fullname" value="<?php echo $fila['fullname']; ?>" required>
     <input type="email" name="usersname" value="<?php echo $fila['usersname']; ?>" required>
@@ -35,3 +47,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 </form>
 
+</body>
+</html>
