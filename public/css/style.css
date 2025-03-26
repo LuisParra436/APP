@@ -643,3 +643,50 @@ td a[href*="eliminar"] {
 td a:hover {
     opacity: 0.7;
 }
+
+table.inventario {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background: #007bff;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background: #f1f1f1;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button.editar {
+    background: #28a745;
+    color: white;
+}
+
+button.editar:hover {
+    background: #218838;
+}
+
+button.eliminar {
+    background: #c82333;
+}

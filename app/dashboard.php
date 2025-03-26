@@ -36,6 +36,48 @@
        }
    </script>
     </nav>
+
+
+    <table class="inventario">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Categoría</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Mouse Logitech</td>
+            <td>Electrónica</td>
+            <td>50</td>
+            <td>$25.99</td>
+            <td>
+                <button class="editar">Editar</button>
+                <button class="eliminar">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Teclado Mecánico</td>
+            <td>Electrónica</td>
+            <td>30</td>
+            <td>$49.99</td>
+            <td>
+                <button class="editar">Editar</button>
+                <button class="eliminar">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
    
             
     </body> <br><br><br>         
