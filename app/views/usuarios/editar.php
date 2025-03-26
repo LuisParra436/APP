@@ -1,5 +1,5 @@
 <?php
-include("../config/conexion.php");
+include("../../config/conexion.php");
 
 $id = $_GET["id"];
 $resultado = $conexion->query("SELECT * FROM users WHERE id = $id");
@@ -34,4 +34,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <button class="btn2" type="submit">Actualizar</button>
     
 </form>
-<button class="btn2" src="./dashboard.php">cerrar</button>
+

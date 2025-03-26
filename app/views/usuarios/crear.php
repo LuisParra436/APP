@@ -32,4 +32,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <button type="submit">Registrar</button>
 </form>
-<button class="btn2" src="../../listar.php">cerrar</button>
