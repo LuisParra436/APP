@@ -655,10 +655,7 @@ table.inventario {
     overflow: hidden;
 }
 
-thead {
-    background: #007bff;
-    color: white;
-}
+
 
 th, td {
     padding: 12px;
@@ -689,4 +686,55 @@ button.editar:hover {
 
 button.eliminar {
     background: #c82333;
+}
+
+/* Tabla */
+.menu-operaciones {
+    font-family: 'Times New Roman', Times, serif;
+    width: 40%;
+    margin: auto;
+    border-collapse: collapse;
+    background: rgba(41, 177, 0, 0.523);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Encabezado */
+.menu-operaciones thead th {
+    font-family: 'Times New Roman', Times, serif;
+    background: #0c9b1f;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+/* Filas */
+.menu-operaciones td {
+    padding: 12px;
+    border-bottom: 1px solid #00000093;
+}
+
+/* Enlaces */
+.menu-operaciones td a {
+    text-decoration: none;
+    color: #0000009f;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+/* Responsivo */
+@media (max-width: 300px) {
+    .menu-operaciones {
+        width: 90%;
+    }
+    
+    .menu-operaciones td a {
+        font-size: 14px;
+        padding: 8px;
+    }
 }

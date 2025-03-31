@@ -1,6 +1,4 @@
 
-<?php include('../templates/cabecera.php');?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,41 +8,61 @@
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <link rel="stylesheet" href="../style.css">  
+        <link rel="stylesheet" href="../public/css/style.css">  
     </head>
+<body>
+    <header>
+    <img src="../public/img/logo.png" class="logo">   <br>  <h1>AREPAS EL DORADO</h1>
+    </header>
+    <br><br><br>
 
-    <body><br><br><br>
     <nav>
+    <nav class="navbar">
+       
+       <div class="menu-icon" onclick="toggleMenu()"></div>
+       <ul class="nav-links">
 
-                <a href="index.php">Home  </a>
-                <a href="operaciones.php">opéraciones</a>
-                <a href="vista_productos.php">  productos </a>
-                <a href="#">   Portefolio  </a>
-                <a href="../index.php" class="salir">salir </a>
-                <div class="animation start-home"></div>
-
-    </nav><br><br><br>
-
-    
-        <div class="menu">
+                <li><a href="dashboard.php">Home  </a></li>
+                <li><a href="operaciones.php">opéraciones</a></li>
+                <li><a href="vista_productos.php">  productos </a></li>
+                <li><a href="views/usuarios/listar.php">   usuarios </a></li>
+                <li><a href="../public/index.php">salir  </a>
+       </ul>
+   </nav>
+   <script>
+       function toggleMenu() {
+           document.querySelector(".nav-links").classList.toggle("active");
+       }
+   </script>
+    </nav>
+       <br><br><br>
+    <table class="menu-operaciones">
+        <thead>
+            <tr>
+                <th>Operaciones</th>
+            </tr>
+        <tr>
+                <td><a href="factura.php">Factura</a></td>
+        </tr>
+        <tr>
+                <td><a href="#">Eliminar factura</a></td>
+        </tr>
+        <tr>
+                <td><a href="#">Realizar obsequio</a></td>
+        </tr>
+        <tr>
+                <td><a href="#">Realizar pago</a></td>
+        </tr>
+        <tr>
+                <td><a href="#">Trasladar unidad</a></td>
+        </tr>
+        </thead>      
+             
+    </table>
         
-            <a href="factura.php">Factura</a>
-            <a href="#">Eliminar factura</a>
-            <a href="#">Realizar obsequio</a>
-            <a href="#">Realizar pago</a>
-            <a href="#">Trasladar unidad</a>
-        </div>
-    
+        <br><br><br>
 
-           
-        </header>
-        
         
     </body>
-</html><br><br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-<?php include('../templates/pie.php');?>
+</html>
+

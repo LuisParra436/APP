@@ -25,7 +25,7 @@
 
                 <li><a href="dashboard.php">Home  </a></li>
                 <li><a href="operaciones.php">opéraciones</a></li>
-                <li><a href="vista_productos.php">  productos </a></li>
+                <li><a href="views/productos/inventario.php">  productos </a></li>
                 <li><a href="views/usuarios/listar.php">   usuarios </a></li>
                 <li><a href="../public/index.php">salir  </a>
        </ul>
