@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +12,8 @@
 <header>
         <img src="../src/logo.png" class="logo">   <br>  <h1>AREPAS EL DORADO</h1>
     </header>
+    <div class="cuadro-usuario">
+    <h2>👤<?php echo htmlspecialchars($_SESSION['fullname']); ?></h2> <?php echo htmlspecialchars($_SESSION['tipo_cargo']); ?></div>
     <br><br><br>
       <nav class="navbar">
         <div class="menu-icon" onclick="toggleMenu()"></div>
@@ -23,7 +28,18 @@
     <br><br><br>
 <body>
 
+<main>
+        <article>
+              
+        </article>
 
+        <aside>
+            
+    
+    
+        </aside>
+
+</main>
 
 
     
