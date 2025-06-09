@@ -35,10 +35,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Redireccionar según el cargo
             switch ($tipo_cargo) {
                 case 'admin':
-                    header("Location: ../secciones/index.php");
+                    header("Location: ../secciones/admin/index.php");
                     break;
                 case 'usuario':
-                    header("Location: ../secciones/users.php");
+                    header("Location: ../secciones/users/index.php");
                     break;
                 default:
                     header("Location: ./");

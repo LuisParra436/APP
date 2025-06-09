@@ -6,11 +6,11 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css">
     <title>Document</title>
 </head>
 <header>
-        <img src="../src/logo.png" class="logo">   <br>  <h1>AREPAS EL DORADO</h1>
+        <img src=../../src/logo.png" class="logo">   <br>  <h1>AREPAS EL DORADO</h1>
     </header>
     <div class="cuadro-usuario">
     <h2>👤<?php echo htmlspecialchars($_SESSION['fullname']); ?></h2> <?php echo htmlspecialchars($_SESSION['tipo_cargo']); ?> </div>
@@ -20,9 +20,9 @@ session_start();
         <ul class="nav-links">
             <li><a href="./">Inicio</a></li>
             <li><a href="operaciones.php">Operaciones</a></li>
-            <li><a href="vista_productos.php">Productos</a></li>
+            <li><a href="productos.php">Productos</a></li>
             <li><a href="usuarios.php">Usuarios</a></li>
-            <li><a href="../logaut/index.php">Salir</a></li>
+            <li><a href="../../logaut/index.php">Salir</a></li>
         </ul>
     </nav>
     <br><br><br>
@@ -43,8 +43,10 @@ session_start();
                         <th>Acciones</th>
                     </tr><br>   
                     <?php
-                    include '../config/conexion.php';
-                    $sql = "SELECT * FROM users";
+                    include '../../config/conexion.php';
+                    $sql = "SELECT users.*, cargo.tipo_cargo FROM users 
+                    INNER JOIN cargo ON users.id_cargo = cargo.id";
+                    // Ejecutar la consulta
                     $resultado = mysqli_query($conexion, $sql); 
                     if (mysqli_num_rows($resultado) > 0) {
                         while ($fila = mysqli_fetch_assoc($resultado)) {
@@ -52,11 +54,11 @@ session_start();
                             echo "<td>" . $fila['id'] . "</td>";
                             echo "<td>" . $fila['fullname'] . "</td>";
                             echo "<td>" . $fila['usersname'] . "</td>";
-                            echo "<td>" . $fila['id_cargo'] . "</td>";
+                            echo "<td>" . $fila['tipo_cargo'] . "</td>";
                             echo "<td>" . $fila['telefono'] . "</td>";
                             echo "<td>" . $fila['direccion'] . "</td>";
                             echo "<td>
-            <a href='../crud/editar.php?id=" . $fila['id'] . "' class='btn-editar'>Editar</a>
+            <a href='../crud/editar.php?id=" . $fila['id'] . "' class='btn-editar'>Editar</a> 
             <a href='../crud/eliminar.php?eliminar=" . $fila['id'] . "' class='btn-eliminar' onclick=\"return confirm('¿Estás seguro de eliminar este usuario?')\">Eliminar</a>
           </td>";
                             echo "</tr>";
@@ -74,7 +76,7 @@ session_start();
     <table class="tabla-operaciones">
         
         <tr>
-            <td><a href="../crud/crear.php">Agregar Usuario</a></td>
+            <td><a href="../../crud/crear.php">Agregar Usuario</a></td>
         </tr>
         
     </table>

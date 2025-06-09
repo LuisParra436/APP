@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $update->bind_param("ssssssi", $fullname, $username,$telefono,$direccion,$password,$id_cargo, $id);
 
     if ($update->execute()) {
-        echo "<script>alert('Usuario actualizado correctamente'); window.location='../secciones/usuarios.php';</script>";
+        echo "<script>alert('Usuario actualizado correctamente'); window.location='../secciones/admin/usuarios.php';</script>";
         exit();
     } else {
         echo "Error en la actualización: " . $update->error;

@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     <nav class="regresar"> 
          <br><br><br>
-        <button class="btn-regresar" onclick="location.href='../secciones/index.php'">Regresar</button>
+        <button class="btn-regresar" onclick="location.href='../secciones/admin/index.php'">Regresar</button>
         <br><br><br>
     
     </nav>

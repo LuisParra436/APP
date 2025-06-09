@@ -199,11 +199,38 @@ h3 {
         cursor: pointer;
         transition: 0.3s;
         position: absolute;
+        flex-direction: column;
     }
 
     .btn-regresar:hover {
         background-color:rgba(0, 0, 0, 0.93);
     }
+.btn-eliminar {
+    background-color: #f44336; /* Rojo */
+    color: white;
+    text-decoration: none;
+    padding: 3px 7px; 
+    border: none; 
+    border-radius: 3px;
+    cursor: pointer; 
+    font-size: 8px;
+}
+.btn-eliminar:hover {
+    background-color: #d32f2f; /* Rojo oscuro */
+}
+.btn-editar {
+    background-color: #2196F3; /* Azul */
+    color: white;
+    text-decoration: none;
+    padding: 3px 7px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 8px;
+}
+.btn-editar:hover {
+    background-color: #1976D2; /* Azul oscuro */
+}
 .logo{
         width: 190px;
         height: 190px;

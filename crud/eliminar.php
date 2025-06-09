@@ -14,7 +14,7 @@ $stmt = $conexion->prepare("DELETE FROM users WHERE id = ?");
 $stmt->bind_param("i", $id);
 
 if ($stmt->execute()) {
-    echo "<script>alert('✅ Usuario eliminado correctamente'); window.location='../secciones/usuarios.php';</script>";
+    echo "<script>alert('✅ Usuario eliminado correctamente'); window.location='../secciones/admin/usuarios.php';</script>";
 } else {
     echo "❌ Error al eliminar: " . $stmt->error;
 }
